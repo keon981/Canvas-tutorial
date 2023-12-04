@@ -2,6 +2,7 @@
 /* eslint-disable no-nested-ternary */
 /* eslint-disable max-len */
 import { useEffect, useState } from 'react'
+import { color } from 'src/style/variable'
 
 type PageSlicePosType = {
   x: number;
@@ -9,16 +10,13 @@ type PageSlicePosType = {
 }
 
 function Canvas() {
+  const { solidColor, dashedColor, zeroColor } = color
   const [pageSlicePos, setPageSlicePos] = useState<PageSlicePosType>({
     x: 0,
     y: 0,
   })
   const [ctxVal, setCtxVal] = useState<null | CanvasRenderingContext2D>(null)
   const [scale, setScale] = useState<number>(1)
-
-  const solidColor = '#CCCCCC70'
-  const dashedColor = '#CCCCCC25'
-  const zeroColor = '#358bf3'
 
   const drawLineGrid = (scaleVal = scale) => {
     // 繪製網格

@@ -1,9 +1,13 @@
 import './App.css'
-import Canvas from './component/Canvas'
+import KonvasCanvas from './component/KonvasCanvas'
+import TestKonvas from './component/TestKonvas'
 
 function App() {
   return (
-    <Canvas />
+    <>
+      {/* <TestKonvas /> */}
+      <KonvasCanvas />
+    </>
   )
 }
 
