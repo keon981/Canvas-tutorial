@@ -1,3 +1,4 @@
+/* eslint-disable no-continue */
 /* eslint-disable no-nested-ternary */
 /* eslint-disable max-len */
 import { useEffect, useState } from 'react'
